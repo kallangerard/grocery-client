@@ -1,6 +1,5 @@
 :root {
   --primary: #1de9b6;
-  /* --primary-color: #2ccd78; */
   --primary-font: var(--dark-font-color);
   --primary-light: #6effe8;
   --primary-dark: #00b686;

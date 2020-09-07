@@ -6,7 +6,6 @@ input:focus {
 input.quantity {
   width: 30px;
   text-align: left;
-  /* color: blue; */
 }
 form {
   display: flex;
