@@ -1,0 +1,19 @@
+input:focus {
+  background-color: var(--primary-dark);
+  color: var(--primary-dark-font);
+}
+
+input.quantity {
+  width: 30px;
+  text-align: left;
+  /* color: blue; */
+}
+form {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+form > * {
+  margin: 0.2em;
+}

@@ -1,16 +1,30 @@
-.app,
+.app {
+  width: 80%;
+  margin: auto;
+}
 .containers {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  color: var(--dark-font-color);
 }
 
-/* .containers {
-  font-size: 28px;
-  color: #fff;
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #283c34;
-  text-align: center;
-} */
+  justify-content: flex-start;
+  padding: 0.8em 0.8em 0 0.8em;
+  background-color: var(--top-background-color);
+}
+
+.container label {
+  font-weight: 500;
+}
+
+.container th {
+  font-weight: 500;
+}
+.container td {
+  padding: 0 5px;
+  background-color: var(--middle-background-color);
+}

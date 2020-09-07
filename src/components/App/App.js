@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from '../Navigation';
 import ItemsTable from '../ItemsTable';
 import ScanLog from '../ScanLog';
 import BarcodeScanner from '../BarcodeScanner';
@@ -22,10 +23,28 @@ export class App extends Component {
   render() {
     return (
       <div className="app">
+        <header>
+          <Navigation />
+        </header>
         <div className="containers">
-          <BarcodeScanner appendBarcode={this.appendBarcode} />
-          <ScanLog barcodeScans={this.state.barcodeScans} />
-          <ItemsTable items={this.state.items} />
+          <div className="container">
+            <BarcodeScanner appendBarcode={this.appendBarcode} />
+          </div>
+          <div className="container">
+            <ScanLog barcodeScans={this.state.barcodeScans} />
+          </div>
+          <div className="container">
+            <ItemsTable items={this.state.items} />
+          </div>
+          <div className="container">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto natus nostrum distinctio molestiae hic ipsam id,
+              eligendi obcaecati, assumenda ratione similique! Possimus
+              provident suscipit odio, omnis libero nam voluptatem sint. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Aut, inventore?
+            </p>
+          </div>
         </div>
       </div>
     );
